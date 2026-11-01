@@ -28,12 +28,38 @@ file to drop in — the scheme is a block in that config file.
 5. Replace the existing `lightColorScheme:` block with the one from
    `warmrain.yml`. To use Warm Rain for both appearances, do the same for
    `colorScheme:`.
-6. Relaunch Tabby and open **Settings → Color schemes → Light mode**. Warm Rain
+6. Add the `appearance.css` block from `warmrain.yml` under the existing
+   `appearance:` key. This keeps the title and tab bar warm instead of white
+   (see below).
+7. Relaunch Tabby and open **Settings → Color schemes → Light mode**. Warm Rain
    should be selected and marked **Custom**.
 
 With `appearance.colorSchemeMode: auto` (the default), Warm Rain is used
 whenever the system is in light appearance. Set it to **Always light** if you
 want Warm Rain all the time.
+
+## Title bar and tab bar
+
+Tabby derives its chrome from the active color scheme by lightening the
+background. For a light scheme, `--theme-bg-more-2` is lightened twice, which
+turns `#f6f3ec` into near-white. That is why the title and tab bar can look
+white while the terminal is warm paper.
+
+The `appearance.css` block in `warmrain.yml` pins the two chrome variables to
+the Warm Rain surface color:
+
+```yaml
+appearance:
+  css: |
+    :root {
+      --theme-bg-more: #efece4 !important;
+      --theme-bg-more-2: #efece4 !important;
+    }
+```
+
+`!important` is needed because Tabby sets these variables inline on the root
+element. The active tab keeps `#f6f3ec`, so the tab bar gets a subtle one-step
+separation from the terminal canvas.
 
 ### Without editing YAML
 

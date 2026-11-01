@@ -1,7 +1,15 @@
 # Warm Rain for Tabby
 #
-# Merge these keys into the `terminal:` block of Tabby's config.yaml.
+# Merge these keys into Tabby's config.yaml: `terminal` with the color scheme,
+# and `appearance.css` to keep the title/tab bar warm instead of near-white.
 # See README.md for the exact steps and config file location.
+
+appearance:
+  css: |
+    :root {
+      --theme-bg-more: #efece4 !important;
+      --theme-bg-more-2: #efece4 !important;
+    }
 
 terminal:
   customColorSchemes:
