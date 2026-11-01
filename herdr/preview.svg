@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+<defs><clipPath id="term"><rect x="64" y="160" width="1072" height="248" rx="12"/></clipPath></defs>
+<rect width="1200" height="900" fill="#f6f3ec"/>
+<text x="64" y="104" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="42" font-weight="600" letter-spacing="-1" fill="#3a3733">paper-warm</text>
+<text x="64" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" fill="#6b655d">A warm, low-contrast light theme for Herdr</text>
+<text x="1136" y="98" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" letter-spacing="2" fill="#8a8378">HERDR.APP THEME</text>
+<text x="1136" y="118" text-anchor="end" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="12" fill="#6b655d">light · 16 ANSI colors</text>
+<rect x="64" y="160" width="1072" height="248" rx="12" fill="#efece4"/>
+<g clip-path="url(#term)">
+<rect x="64" y="160" width="1072" height="36" fill="#e8e4da"/>
+<circle cx="88" cy="178" r="5" fill="#b3423a" fill-opacity="0.9"/>
+<circle cx="108" cy="178" r="5" fill="#a5731c" fill-opacity="0.9"/>
+<circle cx="128" cy="178" r="5" fill="#4e7a3a" fill-opacity="0.9"/>
+<text x="150" y="183" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="12" fill="#6b655d">~/dev/herdr — zsh</text>
+<text x="1116" y="183" text-anchor="end" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="12" fill="#8a8378">paper-warm</text>
+<text x="88" y="222" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="15" fill="#3a3733"><tspan fill="#3568a8">❯ </tspan><tspan font-weight="600">herdr-app</tspan><tspan fill="#6b655d"> --theme paper-warm</tspan></text>
+<text x="88" y="252" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="15" fill="#3a3733"><tspan fill="#a5731c">● </tspan>working</text>
+<text x="300" y="252" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="15" fill="#3a3733"><tspan fill="#b3423a">● </tspan>blocked</text>
+<text x="512" y="252" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="15" fill="#3a3733"><tspan fill="#4e7a3a">● </tspan>done</text>
+<text x="724" y="252" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="15" fill="#3a3733"><tspan fill="#8a8378">● </tspan>idle</text>
+<rect x="80" y="268" width="620" height="28" rx="4" fill="#e2ddd2"/>
+<text x="90" y="287" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="15" fill="#3a3733">~/.config/herdr-app/themes/paper-warm.json</text>
+<text x="88" y="330" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="15" fill="#8a8378"># warm paper, soft contrast — built for long sessions</text>
+<text x="88" y="360" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="15" fill="#3a3733"><tspan fill="#8a8378">ansi  </tspan><tspan fill="#4a4540">black</tspan> <tspan fill="#b3423a">red</tspan> <tspan fill="#4e7a3a">green</tspan> <tspan fill="#a5731c">yellow</tspan> <tspan fill="#3568a8">blue</tspan> <tspan fill="#8a5a8f">magenta</tspan> <tspan fill="#3a8a8a">cyan</tspan></text>
+</g>
+<text x="64" y="476" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" letter-spacing="2" fill="#8a8378">ANSI · 16 COLORS</text>
+<rect x="64.0" y="490" width="118" height="56" rx="8" fill="#4a4540" stroke="#3a3733" stroke-opacity="0.12" stroke-width="1"/>
+<text x="123.0" y="524" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" letter-spacing="0.8" fill="#f6f3ec">BLACK</text>
+<text x="123.0" y="562" text-anchor="middle" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#6b655d">#4a4540</text>
+<rect x="200.3" y="490" width="118" height="56" rx="8" fill="#b3423a" stroke="#3a3733" stroke-opacity="0.12" stroke-width="1"/>
+<text x="259.3" y="524" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" letter-spacing="0.8" fill="#f6f3ec">RED</text>
+<text x="259.3" y="562" text-anchor="middle" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#6b655d">#b3423a</text>
+<rect x="336.6" y="490" width="118" height="56" rx="8" fill="#4e7a3a" stroke="#3a3733" stroke-opacity="0.12" stroke-width="1"/>
+<text x="395.6" y="524" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" letter-spacing="0.8" fill="#f6f3ec">GREEN</text>
+<text x="395.6" y="562" text-anchor="middle" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#6b655d">#4e7a3a</text>
+<rect x="472.9" y="490" width="118" height="56" rx="8" fill="#a5731c" stroke="#3a3733" stroke-opacity="0.12" stroke-width="1"/>
+<text x="531.9" y="524" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" letter-spacing="0.8" fill="#f6f3ec">YELLOW</text>
+<text x="531.9" y="562" text-anchor="middle" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#6b655d">#a5731c</text>
+<rect x="609.1" y="490" width="118" height="56" rx="8" fill="#3568a8" stroke="#3a3733" stroke-opacity="0.12" stroke-width="1"/>
+<text x="668.1" y="524" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" letter-spacing="0.8" fill="#f6f3ec">BLUE</text>
+<text x="668.1" y="562" text-anchor="middle" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#6b655d">#3568a8</text>
+<rect x="745.4" y="490" width="118" height="56" rx="8" fill="#8a5a8f" stroke="#3a3733" stroke-opacity="0.12" stroke-width="1"/>
+<text x="804.4" y="524" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" letter-spacing="0.8" fill="#f6f3ec">MAGENTA</text>
+<text x="804.4" y="562" text-anchor="middle" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#6b655d">#8a5a8f</text>
+<rect x="881.7" y="490" width="118" height="56" rx="8" fill="#3a8a8a" stroke="#3a3733" stroke-opacity="0.12" stroke-width="1"/>
+<text x="940.7" y="524" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" letter-spacing="0.8" fill="#f6f3ec">CYAN</text>
+<text x="940.7" y="562" text-anchor="middle" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#6b655d">#3a8a8a</text>
+<rect x="1018.0" y="490" width="118" height="56" rx="8" fill="#cfc9bd" stroke="#3a3733" stroke-opacity="0.12" stroke-width="1"/>
+<text x="1077.0" y="524" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" letter-spacing="0.8" fill="#3a3733">WHITE</text>
+<text x="1077.0" y="562" text-anchor="middle" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#6b655d">#cfc9bd</text>
+<rect x="64.0" y="578" width="118" height="56" rx="8" fill="#6b655d" stroke="#3a3733" stroke-opacity="0.12" stroke-width="1"/>
+<text x="123.0" y="612" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" letter-spacing="0.8" fill="#f6f3ec">BRIGHT BLACK</text>
+<text x="123.0" y="650" text-anchor="middle" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#6b655d">#6b655d</text>
+<rect x="200.3" y="578" width="118" height="56" rx="8" fill="#c9554c" stroke="#3a3733" stroke-opacity="0.12" stroke-width="1"/>
+<text x="259.3" y="612" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" letter-spacing="0.8" fill="#f6f3ec">BRIGHT RED</text>
+<text x="259.3" y="650" text-anchor="middle" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#6b655d">#c9554c</text>
+<rect x="336.6" y="578" width="118" height="56" rx="8" fill="#628f4b" stroke="#3a3733" stroke-opacity="0.12" stroke-width="1"/>
+<text x="395.6" y="612" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" letter-spacing="0.8" fill="#f6f3ec">BRIGHT GREEN</text>
+<text x="395.6" y="650" text-anchor="middle" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#6b655d">#628f4b</text>
+<rect x="472.9" y="578" width="118" height="56" rx="8" fill="#bd8a2e" stroke="#3a3733" stroke-opacity="0.12" stroke-width="1"/>
+<text x="531.9" y="612" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" letter-spacing="0.8" fill="#3a3733">BRIGHT YELLOW</text>
+<text x="531.9" y="650" text-anchor="middle" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#6b655d">#bd8a2e</text>
+<rect x="609.1" y="578" width="118" height="56" rx="8" fill="#4a7fbf" stroke="#3a3733" stroke-opacity="0.12" stroke-width="1"/>
+<text x="668.1" y="612" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" letter-spacing="0.8" fill="#f6f3ec">BRIGHT BLUE</text>
+<text x="668.1" y="650" text-anchor="middle" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#6b655d">#4a7fbf</text>
+<rect x="745.4" y="578" width="118" height="56" rx="8" fill="#a06ea6" stroke="#3a3733" stroke-opacity="0.12" stroke-width="1"/>
+<text x="804.4" y="612" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" letter-spacing="0.8" fill="#f6f3ec">BRIGHT MAGENTA</text>
+<text x="804.4" y="650" text-anchor="middle" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#6b655d">#a06ea6</text>
+<rect x="881.7" y="578" width="118" height="56" rx="8" fill="#50a0a0" stroke="#3a3733" stroke-opacity="0.12" stroke-width="1"/>
+<text x="940.7" y="612" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" letter-spacing="0.8" fill="#3a3733">BRIGHT CYAN</text>
+<text x="940.7" y="650" text-anchor="middle" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#6b655d">#50a0a0</text>
+<rect x="1018.0" y="578" width="118" height="56" rx="8" fill="#e8e3d8" stroke="#3a3733" stroke-opacity="0.12" stroke-width="1"/>
+<text x="1077.0" y="612" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" letter-spacing="0.8" fill="#3a3733">BRIGHT WHITE</text>
+<text x="1077.0" y="650" text-anchor="middle" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#6b655d">#e8e3d8</text>
+<text x="64" y="698" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" letter-spacing="2" fill="#8a8378">UI · ACCENTS &amp; STATUS</text>
+<rect x="64.0" y="712" width="118" height="56" rx="8" fill="#3568a8" stroke="#3a3733" stroke-opacity="0.12" stroke-width="1"/>
+<text x="123.0" y="746" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" letter-spacing="0.8" fill="#f6f3ec">ACCENT</text>
+<text x="123.0" y="784" text-anchor="middle" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#6b655d">#3568a8</text>
+<rect x="200.3" y="712" width="118" height="56" rx="8" fill="#a5731c" stroke="#3a3733" stroke-opacity="0.12" stroke-width="1"/>
+<text x="259.3" y="746" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" letter-spacing="0.8" fill="#f6f3ec">WORKING</text>
+<text x="259.3" y="784" text-anchor="middle" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#6b655d">#a5731c</text>
+<rect x="336.6" y="712" width="118" height="56" rx="8" fill="#b3423a" stroke="#3a3733" stroke-opacity="0.12" stroke-width="1"/>
+<text x="395.6" y="746" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" letter-spacing="0.8" fill="#f6f3ec">BLOCKED</text>
+<text x="395.6" y="784" text-anchor="middle" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#6b655d">#b3423a</text>
+<rect x="472.9" y="712" width="118" height="56" rx="8" fill="#4e7a3a" stroke="#3a3733" stroke-opacity="0.12" stroke-width="1"/>
+<text x="531.9" y="746" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" letter-spacing="0.8" fill="#f6f3ec">DONE</text>
+<text x="531.9" y="784" text-anchor="middle" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#6b655d">#4e7a3a</text>
+<rect x="609.1" y="712" width="118" height="56" rx="8" fill="#8a8378" stroke="#3a3733" stroke-opacity="0.12" stroke-width="1"/>
+<text x="668.1" y="746" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" letter-spacing="0.8" fill="#f6f3ec">IDLE</text>
+<text x="668.1" y="784" text-anchor="middle" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#6b655d">#8a8378</text>
+<rect x="745.4" y="712" width="118" height="56" rx="8" fill="#6b655d" stroke="#3a3733" stroke-opacity="0.12" stroke-width="1"/>
+<text x="804.4" y="746" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" letter-spacing="0.8" fill="#f6f3ec">MUTED</text>
+<text x="804.4" y="784" text-anchor="middle" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#6b655d">#6b655d</text>
+<rect x="881.7" y="712" width="118" height="56" rx="8" fill="#d5cfc3" stroke="#3a3733" stroke-opacity="0.12" stroke-width="1"/>
+<text x="940.7" y="746" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" letter-spacing="0.8" fill="#3a3733">BORDER</text>
+<text x="940.7" y="784" text-anchor="middle" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#6b655d">#d5cfc3</text>
+<rect x="1018.0" y="712" width="118" height="56" rx="8" fill="#e2ddd2" stroke="#3a3733" stroke-opacity="0.12" stroke-width="1"/>
+<text x="1077.0" y="746" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" letter-spacing="0.8" fill="#3a3733">SELECTION</text>
+<text x="1077.0" y="784" text-anchor="middle" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#6b655d">#e2ddd2</text>
+<text x="64" y="846" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="12" fill="#8a8378">background #f6f3ec   foreground #3a3733   selection #e2ddd2   cursor #3a3733</text>
+<text x="1136" y="846" text-anchor="end" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="12" fill="#8a8378">foreground on background 10.7:1</text>
+</svg>
