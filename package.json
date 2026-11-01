@@ -1,0 +1,22 @@
+{
+  "name": "warmrain",
+  "displayName": "Warm Rain",
+  "description": "Warm Rain — a warm, low-contrast light theme. Ported from the Herdr paper-warm palette.",
+  "version": "0.1.0",
+  "publisher": "therainisme",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Warm Rain",
+        "uiTheme": "vs",
+        "path": "./themes/warmrain-color-theme.json"
+      }
+    ]
+  }
+}
