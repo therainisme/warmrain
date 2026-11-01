@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
 <defs><clipPath id="term"><rect x="64" y="160" width="1072" height="248" rx="12"/></clipPath></defs>
 <rect width="1200" height="900" fill="#f6f3ec"/>
-<text x="64" y="104" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="42" font-weight="600" letter-spacing="-1" fill="#3a3733">paper-warm</text>
-<text x="64" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" fill="#6b655d">A warm, low-contrast light theme for Herdr</text>
-<text x="1136" y="98" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" letter-spacing="2" fill="#8a8378">HERDR.APP THEME</text>
+<text x="64" y="104" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="42" font-weight="600" letter-spacing="-1" fill="#3a3733">Warm Rain</text>
+<text x="64" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" fill="#6b655d">One warm palette for Herdr, VS Code, T3 Code, and Tabby</text>
+<text x="1136" y="98" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" letter-spacing="2" fill="#8a8378">WARM RAIN · THEME COLLECTION</text>
 <text x="1136" y="118" text-anchor="end" font-family="'SF Mono', Menlo, Monaco, Consolas, monospace" font-size="12" fill="#6b655d">light · 16 ANSI colors</text>
 <rect x="64" y="160" width="1072" height="248" rx="12" fill="#efece4"/>
 <g clip-path="url(#term)">
