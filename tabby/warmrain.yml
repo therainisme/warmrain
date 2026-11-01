@@ -1,0 +1,58 @@
+# Warm Rain for Tabby
+#
+# Merge these keys into the `terminal:` block of Tabby's config.yaml.
+# See README.md for the exact steps and config file location.
+
+terminal:
+  customColorSchemes:
+    - name: Warm Rain
+      foreground: '#3a3733'
+      background: '#f6f3ec'
+      cursor: '#3a3733'
+      cursorAccent: '#f6f3ec'
+      selection: '#e2ddd2'
+      selectionForeground: '#3a3733'
+      colors:
+        - '#4a4540'
+        - '#b3423a'
+        - '#4e7a3a'
+        - '#a5731c'
+        - '#3568a8'
+        - '#8a5a8f'
+        - '#3a8a8a'
+        - '#cfc9bd'
+        - '#6b655d'
+        - '#c9554c'
+        - '#628f4b'
+        - '#bd8a2e'
+        - '#4a7fbf'
+        - '#a06ea6'
+        - '#50a0a0'
+        - '#e8e3d8'
+
+  # The light half of Tabby's appearance pair.
+  lightColorScheme:
+    name: Warm Rain
+    foreground: '#3a3733'
+    background: '#f6f3ec'
+    cursor: '#3a3733'
+    cursorAccent: '#f6f3ec'
+    selection: '#e2ddd2'
+    selectionForeground: '#3a3733'
+    colors:
+      - '#4a4540'
+      - '#b3423a'
+      - '#4e7a3a'
+      - '#a5731c'
+      - '#3568a8'
+      - '#8a5a8f'
+      - '#3a8a8a'
+      - '#cfc9bd'
+      - '#6b655d'
+      - '#c9554c'
+      - '#628f4b'
+      - '#bd8a2e'
+      - '#4a7fbf'
+      - '#a06ea6'
+      - '#50a0a0'
+      - '#e8e3d8'
