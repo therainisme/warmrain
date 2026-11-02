@@ -1,7 +1,7 @@
 # Warm Rain
 
-One warm, low-contrast light palette, packaged for four places: **Herdr**,
-**VS Code**, **T3 Code**, and **Tabby**.
+One warm, low-contrast light palette, packaged for five places: **Herdr**,
+**VS Code**, **T3 Code**, **Tabby**, and **the web**.
 
 Warm paper instead of bright white, soft dark-brown text, and accents pulled a
 step toward the page. Built for long sessions: lower glare, calmer surface, no
@@ -40,6 +40,7 @@ target's theme file.
 | **VS Code** | [`vscode/`](vscode/) | Copy `vscode/` into `~/.vscode/extensions/therainisme.warmrain-0.1.0` |
 | **T3 Code** | [`t3code/`](t3code/) | Import the VS Code theme JSON, or publish `t3code/warmrain.json` |
 | **Tabby** | [`tabby/`](tabby/) | Merge `tabby/warmrain.yml` into Tabby's `config.yaml` |
+| **Userscript** | [`userscript/`](userscript/) | Install `userscript/warmrain.user.js` in Tampermonkey |
 
 Each target folder has its own README with the exact steps for that app.
 
@@ -50,6 +51,7 @@ herdr/     Herdr theme (paper-warm.json) + preview and build recipe
 vscode/    VS Code color theme extension
 t3code/    T3 Code palette theme (version 1)
 tabby/     Tabby TerminalColorScheme block for config.yaml
+userscript/Tampermonkey userscript for web pages
 LICENSE    MIT
 ```
 
@@ -60,7 +62,7 @@ but `white` and `bright white` sit near the background on purpose — they are
 tones for rules and fills, not body text. Do not "fix" the palette to reach
 WCAG AA; that breaks what the theme is for.
 
-The family was ported from the Herdr `paper-warm` theme, and all four targets
+The family was ported from the Herdr `paper-warm` theme, and all five targets
 share the same canvas, text, accent, and ANSI colors.
 
 ## License
