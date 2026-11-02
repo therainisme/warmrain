@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Warm Rain
 // @namespace    https://github.com/therainisme/warmrain
-// @version      0.2.0
+// @version      0.3.0
 // @description  Warm Rain — shifts every page color by the same warm-paper tone, so the site keeps its own design
 // @author       therainisme
 // @license      MIT
@@ -19,43 +19,49 @@
   const HOST = location.hostname || location.origin;
   const STORE = 'warmrain.disabledHosts';
 
+  // The userscript manager's API is not always ready at document-start — a
+  // throwing GM_* call used to abort the whole script before anything was
+  // painted. Every call is guarded, and the wash is applied before any of them.
+  const gmGet = (key, fallback) => {
+    try {
+      return GM_getValue(key, fallback);
+    } catch (e) {
+      return fallback;
+    }
+  };
+  const gmSet = (key, value) => {
+    try {
+      GM_setValue(key, value);
+    } catch (e) {}
+  };
+  const gmMenu = (label, fn) => {
+    try {
+      GM_registerMenuCommand(label, fn);
+      return true;
+    } catch (e) {
+      return false;
+    }
+  };
+
   const readDisabled = () => {
-    const v = GM_getValue(STORE, []);
+    const v = gmGet(STORE, []);
     return Array.isArray(v) ? v : [];
   };
-  const isDisabled = () => readDisabled().includes(HOST);
-
-  GM_registerMenuCommand(
-    isDisabled() ? '✅ 在此站点启用 Warm Rain' : '⛔ 在此站点禁用 Warm Rain',
-    () => {
-      const list = readDisabled();
-      GM_setValue(
-        STORE,
-        list.includes(HOST) ? list.filter((h) => h !== HOST) : list.concat(HOST)
-      );
-      location.reload();
+  const isDisabled = () => {
+    try {
+      return readDisabled().includes(HOST);
+    } catch (e) {
+      return false;
     }
-  );
-  GM_registerMenuCommand('↺ 重置所有站点的 Warm Rain 设置', () => {
-    GM_setValue(STORE, []);
-    location.reload();
-  });
+  };
 
-  if (isDisabled()) return;
-
-  // One fixed multiply layer, no per-element overrides.
-  //
-  // Every color on the page is multiplied by #f6f3ec: pure white becomes the
-  // Warm Rain canvas, light greys keep a little depth, saturated colors get
-  // quieter, and dark surfaces stay dark. Because it is a multiplicative
-  // shift, contrast between a surface and its text is preserved — unlike
-  // forcing backgrounds and text colors element by element, which is what
-  // made pages look patchy.
+  // One fixed multiply layer, attached to <html> rather than <body>, so a site
+  // that swaps its body (Turbo, React roots) does not take the wash with it.
   function ensureWash() {
-    const target = document.body || document.documentElement;
-    if (!target) return;
+    const root = document.documentElement;
+    if (!root) return;
     const existing = document.getElementById('warmrain-wash');
-    if (existing && existing.parentNode === target) return;
+    if (existing && existing.parentNode === root) return;
     if (existing) existing.remove();
 
     const wash = document.createElement('div');
@@ -63,9 +69,71 @@
     wash.style.cssText =
       'position:fixed;inset:0;pointer-events:none;z-index:2147483647;' +
       'background:#f6f3ec;mix-blend-mode:multiply;';
-    target.appendChild(wash);
+    root.appendChild(wash);
   }
 
-  ensureWash();
-  document.addEventListener('DOMContentLoaded', ensureWash, { once: true });
+  function removeWash() {
+    const existing = document.getElementById('warmrain-wash');
+    if (existing) existing.remove();
+  }
+
+  let toggleMenuDone = false;
+  let resetMenuDone = false;
+
+  function registerMenus() {
+    if (!toggleMenuDone) {
+      toggleMenuDone = gmMenu(
+        isDisabled() ? '✅ 在此站点启用 Warm Rain' : '⛔ 在此站点禁用 Warm Rain',
+        () => {
+          const list = readDisabled();
+          gmSet(
+            STORE,
+            list.includes(HOST) ? list.filter((h) => h !== HOST) : list.concat(HOST)
+          );
+          location.reload();
+        }
+      );
+    }
+    if (!resetMenuDone) {
+      resetMenuDone = gmMenu('↺ 重置所有站点的 Warm Rain 设置', () => {
+        gmSet(STORE, []);
+        location.reload();
+      });
+    }
+  }
+
+  function boot() {
+    if (isDisabled()) {
+      removeWash();
+    } else {
+      ensureWash();
+    }
+    registerMenus();
+  }
+
+  boot();
+
+  // Injection can land before <html> exists, after DOMContentLoaded has already
+  // fired, or just before a soft navigation replaces the body. Re-apply at each
+  // of those points; ensureWash is idempotent.
+  const again = () => {
+    if (!isDisabled()) ensureWash();
+    registerMenus();
+  };
+
+  document.addEventListener('DOMContentLoaded', again, { once: true });
+  window.addEventListener('load', again, { once: true });
+  window.addEventListener('pageshow', again);
+  ['turbo:load', 'turbo:render', 'pjax:end'].forEach((name) => {
+    document.addEventListener(name, again);
+    window.addEventListener(name, again);
+  });
+
+  // If the page removes the layer, put it back. Observing only <html>'s direct
+  // children keeps this cheap even on pages that churn their DOM constantly.
+  try {
+    new MutationObserver(() => {
+      if (!isDisabled()) ensureWash();
+    }).observe(document.documentElement, { childList: true });
+  } catch (e) {}
 })();

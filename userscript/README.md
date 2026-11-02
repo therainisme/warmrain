@@ -41,6 +41,25 @@ multiply on top — made pages look patchy, because white cards and the forced
 body background ended up at different tints. This version touches no page
 styles.
 
+## Resilience
+
+The layer is attached to `<html>`, not `<body>`, so sites that replace their
+body (Turbo navigation, React roots) do not take it with them. It is applied
+before any `GM_*` call, and every `GM_*` call is guarded: a userscript
+manager whose background page is still starting can throw at
+`document-start`, which used to abort the script before it painted anything.
+
+The wash is re-checked on `DOMContentLoaded`, `load`, `pageshow`,
+`turbo:load`, `turbo:render`, and `pjax:end`, and a `MutationObserver` puts it
+back if a page removes it.
+
+If the layer is missing entirely on a page, the userscript manager never ran
+the script for that document — a known Tampermonkey state after editing
+a script while pages are open (it logs `Cannot create item with duplicate id`
+for the script's UUID). Reload the page, or toggle the script off and on in
+the dashboard to force re-registration. The script cannot fix that from
+inside, because it is not executing at all.
+
 ## Per-site control
 
 The userscript menu has two entries:
@@ -59,6 +78,5 @@ way.
   patchwork.
 - The layer is `pointer-events: none` and sits at `z-index: 2147483647`, so it
   changes color only and does not intercept clicks or typing.
-- Sites that render the page inside a transformed or filtered root can clip the
-  fixed layer; the script falls back to `documentElement` when `body` is not
-  available yet.
+- Sites that render the page inside a transformed or filtered root can clip a
+  fixed layer; that is a CSS limitation, not something the script can detect.
